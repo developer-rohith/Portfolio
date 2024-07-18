@@ -176,8 +176,6 @@ section {
   border-radius: 50%;
   /* This creates the circular shape */
   overflow: hidden;
-
-
 }
 
 .circle-image {
@@ -229,9 +227,8 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  /* margin-top: auto; */
-
-
+  gap: 1rem;
+  margin-top: auto;
 }
 
 .btn {
@@ -240,22 +237,12 @@ section {
   padding: 1rem;
   width: 12rem;
   border-radius: 2rem;
-
-  /* Add margin to separate buttons */
-}
-
-.btn-color-1,
-.btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
+  color: black;
+  background: none;
 }
 
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
+.btn:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -272,10 +259,6 @@ section {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
@@ -286,7 +269,6 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
 }
 
 .about-details-container {
@@ -314,30 +296,26 @@ section {
 }
 
 .details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
-  flex: 1;
-
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-
-
+  height: 100%;
 }
-
 
 .color-container {
   padding: 1rem;
-  /* flex: 1; */
-  display: flex;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  flex-direction: column;
-
 }
 
 .section-container {
@@ -355,7 +333,6 @@ section {
 
 #experience {
   position: relative;
-
 }
 
 .experience-sub-title {
@@ -363,7 +340,6 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
-
 }
 
 .experience-details-container {
@@ -371,7 +347,6 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
 
 .wrapper {
   max-height: 50rem;
@@ -381,7 +356,6 @@ section {
 }
 
 .wrapper .article-container {
-  /* min-width: 10px; */
   height: 110px;
   line-height: 110px;
   text-align: center;
@@ -389,45 +363,20 @@ section {
 }
 
 .article-container {
+  flex: 1;
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.0rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-  margin-top: 18rem;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  align-items: center;
+  justify-content: center;
 }
 
 .project-img {
   border-radius: 0.5rem;
-  width: 90%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 0;
   color: black;
 }
 
